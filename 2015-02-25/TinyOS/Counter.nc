@@ -4,8 +4,8 @@ interface CounterInt{
 }
 
 module Counter{
-    provides CounterInt;
-    uses Receive;
+    provides interface CounterInt;
+    uses interface Receive;
 }
 implementation{
 

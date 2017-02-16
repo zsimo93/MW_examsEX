@@ -1,7 +1,7 @@
 module PacketCounter{
-	uses Receive;
-	uses Timer<TMilli> as Timer;
-	provides Read<uint16_t>;
+	uses interface Receive;
+	uses interface Timer<TMilli> as Timer;
+	provides interface Read<uint16_t>;
 }
 
 implementation{

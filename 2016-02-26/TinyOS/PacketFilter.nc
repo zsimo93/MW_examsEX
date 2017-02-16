@@ -1,7 +1,7 @@
 module PacketFilter{
-    uses Receive as RIn;
-    provides Receive as ROut;
-    provides Read<uint32_t> as Read;
+    uses interface Receive as RIn;
+    provides interface Receive as ROut;
+    provides interface Read<uint32_t> as Read;
 }
 implementation{
     uint32_t dropped = 0;

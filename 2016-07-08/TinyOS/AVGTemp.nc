@@ -1,9 +1,9 @@
 
 module AVGTemp{
-    uses Read<double> as Read;
-    provides Read<double> as Read1;
-    provides StdControl;
-    uses Timer<TMilli> as Timer;
+    uses interface Read<double> as Read;
+    provides interface Read<double> as Read1;
+    provides interface StdControl;
+    uses interface Timer<TMilli> as Timer;
 }
 implementation{
 

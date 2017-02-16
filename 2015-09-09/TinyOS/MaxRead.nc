@@ -1,7 +1,7 @@
 module MaxRead{
     uses interface Read<uint16_t> as ReadIn;
     provides interface Read<uint16_t> as ReadOut;
-    uses Timer<TMilli> as Timer0;
+    uses interface Timer<TMilli> as Timer0;
 }
 implementation{
 

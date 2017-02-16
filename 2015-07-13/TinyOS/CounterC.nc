@@ -1,6 +1,6 @@
 module CounterC{
-	uses Timer<TMilli> as Timer0;
-	provides CounterOperations;
+	uses interface Timer<TMilli> as Timer0;
+	provides interface CounterOperations;
 }
 implementations{
 	uint32_t counter = 0;

@@ -6,8 +6,8 @@ interface CounterInt{
 }
 
 module Counter{
-    uses Timer<TMilli> as Timer0;
-    provides CounterInt;
+    uses interface Timer<TMilli> as Timer0;
+    provides interface CounterInt;
 }
 implementation{
     
