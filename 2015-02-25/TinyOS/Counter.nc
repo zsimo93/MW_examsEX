@@ -13,7 +13,7 @@ implementation{
 
     command error_t resetCount(){
         counter = 0;
-        return SUCCES;
+        return SUCCESS;
     }
 
     event message_t* receive(message_t* msg, void* payload, uint8_t len){

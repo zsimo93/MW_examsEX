@@ -18,7 +18,11 @@ implementation{
     }
 
     command error_t Read.read(){
-        signal Read.readDone(SUCCESS, dropped);
+        post sendRead();
         return SUCCESS;
+    }
+
+    task void sendRead(){
+        signal Read.readDone(SUCCESS, dropped);
     }
 }

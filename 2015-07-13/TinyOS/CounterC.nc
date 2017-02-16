@@ -8,7 +8,7 @@ implementations{
 	command void Increment(){
 		counter ++;
 		if(counter == 100)
-		{signals CounterHundred(counter);}
+		{signal counterHundred(counter);}
 	}
 	
 	command void start(){
